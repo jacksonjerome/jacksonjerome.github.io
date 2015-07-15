@@ -1,3 +1,12 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+#wrapper {
+  min-height: 100%;
+  position: relative; }
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -227,60 +236,66 @@ body {
   -webkit-text-size-adjust: 100%; }
 
 header {
-  height: 400px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pics/BearingSection_Cycles.jpg") center center;
-  background-size: cover; }
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pics/BearingSection_Cycles.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
   header nav {
-    float: right; }
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    z-index: 9999; }
     header nav a {
       display: inline-block;
       margin-left: 20px;
+      margin-bottom: 10px;
       padding-right: 20px;
-      padding-top: 20px;
+      padding-top: 10px;
       color: rgba(254, 254, 254, 0.8);
       font-size: 14px;
       font-weight: 700;
       text-transform: uppercase; }
       header nav a:hover {
         color: #fefefe; }
-  header h1 {
+  header #head1 {
     text-align: center;
     font-size: 62px;
     font-weight: 700;
     color: rgba(254, 254, 254, 0.9);
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    padding-top: 105px;
+    padding-top: 100px;
     margin-bottom: 15px;
-    clear: both; }
-    header h1 span {
+    margin-top: 0px; }
+    header #head1 span {
       display: inline-block;
       border-radius: 10px;
       border: 10px rgba(254, 254, 254, 0.9) solid;
       padding: 0.2em 0.5em; }
   header .tagline {
     text-align: center;
+    padding-bottom: 105px;
+    margin-bottom: 0px;
     font-size: 16px;
     font-weight: 700;
     color: rgba(254, 254, 254, 0.9); }
 
-h2 {
-  font-size: 28px;
-  font-weight: 700;
-  color: black;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 5px; }
-
-.intro {
-  font-size: 18px;
-  font-weight: 700;
-  color: black;
-  padding-left: 20px;
-  padding-right: 20px; }
+#img1 {
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pics/CarbonFiber_V5.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding-bottom: 100px; }
 
 footer {
-  background: rgba(0, 0, 0, 0.8); }
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
 
 .lockup {
   padding: 30px; }
@@ -299,3 +314,26 @@ footer {
       text-transform: uppercase; }
       .lockup .content-wrap a:hover {
         color: #fefefe; }
+
+#about {
+  padding-bottom: 125px;
+  text-align: center;
+  background-color: #fefef2; }
+  #about h2 {
+    margin-top: 0;
+    padding-top: 50px;
+    font-size: 28px;
+    font-weight: 700;
+    color: black; }
+  #about #portrait {
+    background: url("../img/pics/Web_Portrait.png");
+    height: 200px;
+    width: 200px;
+    margin: 0 auto; }
+  #about .about {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    max-width: 800px;
+    margin: 32px auto;
+    text-align: justify; }

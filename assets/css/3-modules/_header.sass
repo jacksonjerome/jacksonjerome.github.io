@@ -1,15 +1,24 @@
 header
- height: 400px
- background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/pics/BearingSection_Cycles.jpg") center center
- background-size: cover
+ height: 100%
+ background:  
+  image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/pics/BearingSection_Cycles.jpg")
+  size: cover
+  position: center center
+  attachment: fixed
+  repeat: no-repeat
 	
  nav
-  float: right
+  text-align: right
+  position: fixed
+  width: 100%
+  z-index: 9999
+  
   a
    display: inline-block
    margin-left: 20px
+   margin-bottom: 10px
    padding-right: 20px
-   padding-top: 20px
+   padding-top: 10px
    color: rgba(254,254,254,0.8)
    font:
     size: 14px
@@ -19,7 +28,7 @@ header
    &:hover
     color: rgba(254,254,254,1)
 	
- h1
+ #head1
   text-align: center
   font:
    size: 62px
@@ -27,9 +36,10 @@ header
   color: rgba(254,254,254,0.9)
   text-transform: uppercase
   letter-spacing: 0.05em
-  padding-top: 105px
+  padding-top: 100px
   margin-bottom: 15px
-  clear: both
+  margin-top: 0px
+  
  
   span
    display: inline-block
@@ -39,6 +49,8 @@ header
 	
  .tagline
   text-align: center
+  padding-bottom: 105px
+  margin-bottom: 0px
   font:
    size: 16px
    weight: 700
