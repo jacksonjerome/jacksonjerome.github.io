@@ -282,6 +282,14 @@ header {
     font-weight: 700;
     color: rgba(254, 254, 254, 0.9); }
 
+@media screen and (max-width: 820px) {
+  #head1 {
+    width: 600px;
+    margin: auto; } }
+@media screen and (max-width: 620px) {
+  #head1 {
+    font-size: 20px;
+    width: 400px; } }
 #img1 {
   height: 500px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pics/CarbonFiber_V5.jpg");
@@ -317,23 +325,63 @@ footer {
 
 #about {
   padding-bottom: 125px;
-  text-align: center;
   background-color: #fefef2; }
   #about h2 {
     margin-top: 0;
     padding-top: 50px;
     font-size: 28px;
     font-weight: 700;
-    color: black; }
+    color: black;
+    text-align: center; }
   #about #portrait {
     background: url("../img/pics/Web_Portrait.png");
     height: 200px;
     width: 200px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-align: center; }
   #about .about {
     font-size: 18px;
-    font-weight: 700;
     color: black;
     max-width: 800px;
     margin: 32px auto;
-    text-align: justify; }
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px; }
+  #about .skill_outter {
+    max-width: 700px;
+    margin: 0px auto;
+    padding-left: 20px; }
+    #about .skill_outter:after {
+      content: "";
+      display: table;
+      clear: both; }
+  #about .skill_header {
+    margin-top: 0px auto;
+    padding-top: 50px;
+    font-size: 24px;
+    font-weight: 700;
+    color: black; }
+  #about .skill_inner {
+    width: 350px;
+    float: left; }
+  #about .skill_cat {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7); }
+  #about .skill {
+    font-size: 0px;
+    margin-bottom: 10px; }
+    #about .skill span {
+      display: inline-block;
+      height: 12px;
+      width: 18px;
+      margin-right: 4px;
+      border-radius: 9px;
+      border: 2px solid #802828;
+      background: #FF4E4E; }
+
+#about .skill.point-0 span:nth-child(n+1), #about .skill.point-1 span:nth-child(n+2), #about .skill.point-2 span:nth-child(n+3), #about .skill.point-3 span:nth-child(n+4), #about .skill.point-4 span:nth-child(n+5), #about .skill.point-5 span:nth-child(n+6), #about .skill.point-6 span:nth-child(n+7), #about .skill.point-7 span:nth-child(n+8), #about .skill.point-8 span:nth-child(n+9), #about .skill.point-9 span:nth-child(n+10) {
+  background-color: #fefef2; }
+
+@media screen and (max-width: 721px) {
+  .skill_outter {
+    width: 350px; } }
